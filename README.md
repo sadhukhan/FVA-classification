@@ -3,7 +3,7 @@ Flux variability analysis (FVA) is a widely used computational tool for evaluati
 
 Based on the minimum and maximum possible flux through each reaction, each reaction in a given metabolic model can be classified into the 9 categories. Consider recation: A --> B
 
-#Categories: 
+# Categories: 
 (1) PositiveFixed - Reaction Flux at a fixed rate in A --> B direction.
 (2) PositiveVariable - Reaction Flux at a variable rate in A --> B direction.
 (3) 0 to Positive - Reaction Flux at a variable rate in A --> B direction, or No flux. 
@@ -16,3 +16,8 @@ Based on the minimum and maximum possible flux through each reaction, each react
 
 Changes in the metabolic conditions, such as external stress, avalibilty of glucose, oxygen etc., metabolic reactions may be constrained differently in the cell. This program helps compare 2 different metabolic conditions or 2 different types of cells in the same condition.
 
+# Command to run the code: 
+> rxnClassification_usingFVA.pl ControlCell.FVA TestCell.FVA
+
+# Output:
+Tab-seperated file format. Change in FVA categories due to metabolic/conditional changes.
